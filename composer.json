@@ -1,0 +1,37 @@
+{
+    "name": "thruster/doctrine-actions-bundle",
+    "type": "symfony-bundle",
+    "description": "Thruster DoctrineActions Bundle",
+    "keywords": ["symfony", "bundle", "doctrine", "doctrineactions", "doctrine-actions", "actions", "thruster"],
+    "homepage": "https://thruster.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aurimas Niekis",
+            "email": "aurimas@niekis.lt"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "thruster/actions-bundle": "~1.0",
+        "doctrine/doctrine-bundle": ">=1.2",
+        "thruster/doctrine-actions": "~1.0",
+        "symfony/http-kernel": ">= 2.5",
+        "symfony/dependency-injection": ">= 2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
+    },
+    "autoload": {
+        "psr-4": { "Thruster\\Bundle\\DoctrineActionsBundle\\": "src" }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-ci": "vendor/bin/phpunit -c phpunit.xml.ci"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
